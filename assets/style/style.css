@@ -47,7 +47,7 @@ body {
   margin-left: 50px;
 }
 
-button {
+.car-button {
   width: 280px;
   height: 200px;
   margin-left: 30px;
@@ -70,7 +70,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.car-button:hover {
   background-color: rgba(21, 20, 20, 0.24);
 }
 
@@ -139,6 +139,8 @@ ul {
   display: flex;
   flex-direction: row;
 }
+
+
 
 /* li {
   display: flex;

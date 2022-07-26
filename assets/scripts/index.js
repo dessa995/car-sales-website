@@ -1,23 +1,32 @@
 
 // Function definition
-function findElementAndHandleClick(buttonToBeClicked, textToAlert) {
-  const myButton = document.getElementById(buttonToBeClicked);
+function findElementAndHandleEvent(element, textToAlert, typeOfEvent) {
+  const myButton = document.getElementById(element);
 
-  myButton.addEventListener("click", function () {
+  myButton.addEventListener(typeOfEvent, function () {
     alert(textToAlert);
   });
 }
 
 // Function call
-findElementAndHandleClick("header-button", "Uradice nesto");
-findElementAndHandleClick("sedan", "Ponuda Sedana");
-findElementAndHandleClick("truck", "Ponuda Kamioneta");
-findElementAndHandleClick("suv/cross", "Ponuda SUV-ova");
-findElementAndHandleClick("coupe", "ponude Coupe-ova");
-findElementAndHandleClick("hatchback", "Ponuda  Hatchback-ova");
-findElementAndHandleClick("van", "Ponuda Vanova");
-findElementAndHandleClick("convertable", "Ponuda Kabrioleta");
-findElementAndHandleClick("wagon", "Ponuda Karavana");
+findElementAndHandleEvent("header-button", "Uradice nesto", "click");
+findElementAndHandleEvent("sedan", "Ponuda Sedana", "click");
+findElementAndHandleEvent("truck", "Ponuda Kamioneta", "click");
+findElementAndHandleEvent("suv/cross", "Ponuda SUV-ova", "click");
+findElementAndHandleEvent("coupe", "ponude Coupe-ova", "click");
+findElementAndHandleEvent("hatchback", "Ponuda  Hatchback-ova", "click");
+findElementAndHandleEvent("van", "Ponuda Vanova", "click");
+findElementAndHandleEvent("convertable", "Ponuda Kabrioleta", "click");
+findElementAndHandleEvent("wagon", "Ponuda Karavana", "click");
+
+findElementAndHandleEvent("fname", "Promenila se vrednost", "keyup");
+
+
+fetch('https://jsonplaceholder.cypress.io/todos/1')
+  .then(response => response.json())
+  .then(function (json) {
+    document.querySelector(".header-heading").textContent = json.title;
+  });
 
 
 

@@ -1,131 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="assets/style/style.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Car Center Djordjevic</title>
+  <link href="assets/style/style.css" rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <title>Car Center Djordjevic</title>
 
-  <body>
-    <header>
-      <div class="header-div" height="600" width="800">
-        <h1 class="header-heading">Car Center Djordjevic</h1>
-        <p class="header-p">
-          We bring experience of buying cars to a new level<br />
-          Feel secure while shopping knowing everything will be fine
-        </p>
-        <button id="header-button" class="header-button">Find out more</button>
-        <br />
-        <br />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="header-div" height="600" width="800">
+      <h1 class="header-heading">Car Center Djordjevic</h1>
+      <p class="header-p">
+        We bring experience of buying cars to a new level<br />
+        Feel secure while shopping knowing everything will be fine
+      </p>
+      <button id="header-button" class="header-button">Find out more</button>
+      <br />
+      <br />
+    </div>
+  </header>
+
+  <article>
+    <div class="paragraph-find">
+      <p>
+        We offer cars of all sizes and for all uses<br />Find the one you like
+        the most
+      </p>
+    </div>
+    <div>
+      <p>Select Car Brand:</p>
+      <input type="checkbox" id="alfa-romeo" name="alfa-romeo" value="Alfa Romeo">
+      <label for="alfa-romeo">Alfa Romeo</label>
+      <input type="checkbox" id="aston-martin" name="aston-martin" value="Aston Martin">
+      <label for="aston-martin">Aston Martin</label>
+      <input type="checkbox" id="audi" name="audi" value="Audi">
+      <label for="audi">Audi</label>
+      <input type="checkbox" id="bentley" name="bentley" value="Bentley">
+      <label for="bentley">Bentley</label>
+      <input type="checkbox" id="bmw" name="bmw" value="BMW">
+      <label for="bmw">BMW</label>
+    </div>
+
+    <div>
+      <p>Manifacturing Year:</p>
+      <input type="date" id="manifacture" name="manifacture">
+      <label for="manifacture">Date</label>
+    </div>
+
+    <div>
+      <label for="vehicle">Number of vehicles:</label>
+      <input type="number" id="vehicle" name="vehicle" min="1" max="125">
+    </div>
+
+    <div>
+      <label for="brand">Choose a brand</label>
+      <select id="brand" name="carlist">
+        <option value="audi">audi</option>
+        <option value="bmw">bmw</option>
+        <option value="mazda">mazda</option>
+        <option value="toyota">toyota</option>
+      </select>
+    </div>
+
+    <div class="car-list">
+      <p class="car-list-p">Choose your Car Type</p>
+      <div class="car-butons-1">
+        <button class="car-button" id="sedan">
+          <img src="assets/img/sedan-premium.png" alt="sedan picture" height="70%" width="90%" />
+          Sedan
+        </button>
+        <button class="car-button" id="wagon">
+          <img src="assets/img/wagon-premium.png" alt="wagon picture" height="70%" width="90%" />Wagon
+        </button>
+        <button class="car-button" id="coupe">
+          <img src="assets/img/coupe-premium.png" alt="suv picture" height="70%" width="90%" />Coupe
+        </button>
+        <button class="car-button" id="convertable">
+          <img src="assets/img/cabrio-premium.png" alt="convertable picture" height="70%" width="90%" />Convertable
+        </button>
       </div>
-    </header>
+      <br />
+      <div class="car-butons-2">
+        <button class="car-button" id="hatchback">
+          <img src="assets/img/hatchback-premium.png" alt="hatchback picture" height="70%" width="90%" />Hatchback
+        </button>
+        <button class="car-button" id="suv/cross">
+          <img src="assets/img/suv-premium.png" alt="suv picture" height="70%" width="90%" />SUV/Crossover
+        </button>
+        <button class="car-button" id="van">
+          <img src="assets/img/van-premium.png" alt="van picture" height="70%" width="90%" />Van/Minivan
+        </button>
+        <button class="car-button" id="truck">
+          <img src="assets/img/truck-premium.png" alt="truck picture" height="70%" width="90%" />
+          Truck
+      </div>
+      </button>
+    </div>
+    </div>
 
-    <article>
-      <div class="paragraph-find">
-        <p>
-          We offer cars of all sizes and for all uses<br />Find the one you like
-          the most
-        </p>
-      </div>
-      <div class="car-list">
-        <p class="car-list-p">Choose your Car Type</p>
-        <div class="car-butons-1">
-          <button id="sedan">
-            <img
-              src="assets/img/sedan-premium.png"
-              alt="sedan picture"
-              height="70%"
-              width="90%"
-            />
-            Sedan
-          </button>
-          <button id="wagon">
-            <img
-              src="assets/img/wagon-premium.png"
-              alt="wagon picture"
-              height="70%"
-              width="90%"
-            />Wagon
-          </button>
-          <button id="coupe">
-            <img
-              src="assets/img/coupe-premium.png"
-              alt="suv picture"
-              height="70%"
-              width="90%"
-            />Coupe
-          </button>
-          <button id="convertable">
-            <img
-              src="assets/img/cabrio-premium.png"
-              alt="convertable picture"
-              height="70%"
-              width="90%"
-            />Convertable
-          </button>
-          </div>
-          <br />
-          <div class="car-butons-2">
-          <button id="hatchback">
-            <img
-            src="assets/img/hatchback-premium.png"
-            alt="hatchback picture"
-            height="70%"
-            width="90%"
-            />Hatchback
-          </button>
-          <button id="suv/cross">
-            <img
-            src="assets/img/suv-premium.png"
-            alt="suv picture"
-            height="70%"
-            width="90%"
-            />SUV/Crossover
-          </button>
-          <button id="van">
-            <img
-            src="assets/img/van-premium.png"
-            alt="van picture"
-            height="70%"
-            width="90%"
-            />Van/Minivan
-          </button>
-          <button id="truck">
-            <img
-            src="assets/img/truck-premium.png"
-            alt="truck picture"
-            height="70%"
-            width="90%"
-            />
-            Truck
-            </div>
-          </button>
-        </div>
-      </div>
-    </article>
-    
-    <footer>
-      <div class="footer-content">
-        <p>Contact us:</p>
-        <p class="e-mail">carcentardjordjevic@gmail.com</p>
-        <p class="tel">Tel:060/189-55-63</p>
-        <p class="contact-adress">
-          Address: Bulevar Evrope 84<br />21000 Novi sad
-        </p>
-      </div>
-    </footer>
 
-    <script src="assets/scrips/index.js"></script>
-  </body>
+  </article>
+
+  <p>Log In</p>
+  <div>
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname">
+    <button class="submit-button">Submit</button>
+  </div>
+
+  <div>
+    <p>Send Feedback:</p>
+    <label for="sendback"></label>
+    <textarea id="sendback" name="send-feedback" rows="4" cols="50"></textarea><br>
+    <button>Submit</button>
+  </div>
+
+  <div>
+    <p>Do you own a car?</p>
+    <input type="radio" id="yes" name="ownership" value="Yes">
+    <label for="yes">Yes</label><br>
+    <input type="radio" id="no" name="ownership" value="no">
+    <label for="no">No</label>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>Contact us:</p>
+      <p class="e-mail">carcentardjordjevic@gmail.com</p>
+      <p class="tel">Tel:060/189-55-63</p>
+      <p class="contact-adress">
+        Address: Bulevar Evrope 84<br />21000 Novi sad
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/scripts/index.js"></script>
+</body>
+
 </html>
